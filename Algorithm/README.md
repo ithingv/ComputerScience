@@ -19,9 +19,9 @@
 - [파이썬구현](./sorting/quick_sort.py)
 ---
 <div align='center'>
-    <img src='/Algorithm/sorting/images/quick_1.jpg' height='500px'>
-    <img src='/Algorithm/sorting/images/quick_2.jpg' height='500px'>
-    <img src='/Algorithm/sorting/images/quick_3.jpg' height='500px'>
+    <img src='/Algorithm/sorting/images/quick_1.jpg'>
+    <img src='/Algorithm/sorting/images/quick_2.jpg'>
+    <img src='/Algorithm/sorting/images/quick_3.jpg'>
 </div>
 <br>
 
