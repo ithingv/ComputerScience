@@ -6,12 +6,17 @@
 
 ## Table of Contents
 **Sort Algorithm**
-- [Quick Sort](#1)
-- [Merge Sort](#2)
-- [Heap Sort](#3)
-- [Counting Sort](#4)
-- [Radix Sort](#5)
-- [references](#6)
+- [Table of Contents](#table-of-contents)
+  - [#1](#1)
+- [Quicksort](#quicksort)
+  - [#2](#2)
+- [Merge Sort](#merge-sort)
+  - [#3](#3)
+- [Heap Sort](#heap-sort)
+  - [#4](#4)
+- [Counting Sort](#counting-sort)
+  - [#6](#6)
+    - [References](#references)
 
 
 
@@ -40,7 +45,6 @@
     ```
 - **시각화**
 <img src='/Algorithm/sorting/images/quick-sort.gif'>
----
 <div align='center'>
     <img src='/Algorithm/sorting/images/quick_1.jpg'>
     <img src='/Algorithm/sorting/images/quick_2.jpg'>
