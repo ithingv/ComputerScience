@@ -2,17 +2,17 @@
 # https://ratsgo.github.io/data%20structure&algorithm/2017/09/28/quicksort/
 
 # not inplace sort
-def quick_sort_not_inplace(arr):
+def quick_sort_cache(arr):
     if len(arr) <= 1:
         return arr 
     else:
         pivot_val = arr[0]
         leftArr = [elem for elem in arr[1:] if elem <= pivot_val]
         rightArr = [elem for elem in arr[1:] if elem > pivot_val]
-        return quick_sort_not_inplace(leftArr) + [pivot_val] + quick_sort_not_inplace(rightArr)
+        return quick_sort_cache(leftArr) + [pivot_val] + quick_sort_not_inplace(rightArr)
 
 # in place sort
-def quick_sort_inplace(arr):
+def quick_sort(arr):
     quick_sort_helper(arr,0, len(arr)-1)
 
 def quick_sort_helper(arr, start, end):
