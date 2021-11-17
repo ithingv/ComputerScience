@@ -3,7 +3,7 @@
 
 ## ✔ Algorithm
 - **Table of contents**
-  -  Sorting
+  -  [Sorting](Algorithm/README.md)
      -  MergeSort
      -  QuickSort
      -  CountingSort
@@ -19,6 +19,7 @@
 
 ## ✔ Database
 - **Table of contents**
+  - [SQL](Database/SQL/README.md)
 
 ## ✔ Network
 - **Table of contents**
