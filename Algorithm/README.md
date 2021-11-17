@@ -31,12 +31,12 @@
 - [파이썬구현](./sorting/merge_sort.py)
 ---
 <div align='center'>
-    <img src='/Algorithm/sorting/images/merge_1.jpg' height='500px'>
-    <img src='/Algorithm/sorting/images/merge_2.jpg' height='500px'>
-    <img src='/Algorithm/sorting/images/merge_3.jpg' height='500px'>
-    <img src='/Algorithm/sorting/images/merge_4.jpg' height='500px'>
-    <img src='/Algorithm/sorting/images/merge_5.jpg' height='500px'>
-    <img src='/Algorithm/sorting/images/merge_6.jpg' height='500px'>
+    <img src='/Algorithm/sorting/images/merge_1.jpg'>
+    <img src='/Algorithm/sorting/images/merge_2.jpg'>
+    <img src='/Algorithm/sorting/images/merge_3.jpg'>
+    <img src='/Algorithm/sorting/images/merge_4.jpg'>
+    <img src='/Algorithm/sorting/images/merge_5.jpg'>
+    <img src='/Algorithm/sorting/images/merge_6.jpg'>
 </div>
 <br>
 
@@ -50,8 +50,8 @@
 - [파이썬구현](./sorting/counting_sort.py)
 ---
 <div align='center'>
-    <img src='/Algorithm/sorting/images/counting_1.jpg' height='500px'>
-    <img src='/Algorithm/sorting/images/counting_2.jpg' height='500px'>
+    <img src='/Algorithm/sorting/images/counting_1.jpg'>
+    <img src='/Algorithm/sorting/images/counting_2.jpg'>
 </div>
 
 ---
