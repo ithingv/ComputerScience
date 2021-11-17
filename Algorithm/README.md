@@ -110,7 +110,7 @@
     - count 배열의 초기화, count 배열에서 접두사(prefix)의 수를 세는 루프의 반복은 최대 k + 1회이고 따라서 O(k)이다. 그리고 출력 배열의 초기화는 O(n) 시간이 걸리므로 전체 알고리즘의 시간은 O(n + k)이다.
   
   - 공간복잡도
-    - 길이 n, k+1의 배열을 사용하므로 사용하는 총 공간은 O(n + k)이다. 원소의 수보다 최대 key값이 훨씬 작은 경우, input과 output array외에 사용하는 저장 공간은 O(k)를 사용하는 Count array기 때문에 계수 정렬은 상당히 공간 효율적(high space efficient)이다.
+    - 길이 n, k+1의 배열을 사용하므로 사용하는 총 공간은 O(n + k)이다. 원소의 수보다 최대 key값이 훨씬 작은 경우, input과 output array외에 사용하는 저장 공간은 O(k)를 사용하는 Count 배열이기 때문에 이때 계수 정렬은 상당히 공간 효율적(high space efficient)이다.
     
 - **시각화**
 
