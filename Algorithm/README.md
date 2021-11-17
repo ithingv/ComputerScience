@@ -4,24 +4,16 @@
 </div>
 
 
-## Table of Contents
 **Sort Algorithm**
-- [Table of Contents](#table-of-contents)
-  - [#1](#1)
 - [Quicksort](#quicksort)
-  - [#2](#2)
 - [Merge Sort](#merge-sort)
-  - [#3](#3)
 - [Heap Sort](#heap-sort)
-  - [#4](#4)
 - [Counting Sort](#counting-sort)
-  - [#6](#6)
-    - [References](#references)
+- [References](#references)
 
 
 
 ---
-### #1
 ## Quicksort
 - [파이썬구현](./sorting/quick_sort.py)
 - **퀵 정렬**(Quick sort)은 다른 원소와의 비교를 통해 데이터를 정렬하는 **비교 알고리즘**으로 **피벗**을 가지는 것이 특징이며 n개의 데이터를 정렬할 때, 어떤 피벗을 선택하는지에 따라 최악의 경우에는 O(n2)번의 비교를 수행하고, 평균적으로 O(n log n)번의 비교를 수행한다. 
@@ -52,7 +44,6 @@
 </div>
 <br>
 
-### #2 
 ## Merge Sort
 - [파이썬구현](./sorting/merge_sort.py)
 - **합병 정렬**(merge sort)은 **O(n log n)** 비교 기반 정렬 알고리즘이다. 일반적인 방법으로 구현했을 때 이 정렬은 **안정 정렬**에 속하며, 분할 정복 알고리즘의 하나이다.
@@ -87,11 +78,9 @@
 <br>
 
 ---
-### #3
 ## Heap Sort
 
 ---
-### #4
 ## Counting Sort
 - [파이썬구현](./sorting/counting_sort.py)
 - **카운팅정렬**(counting sort)은 작은 양의 정수 key에 따라 원소를 정렬하는 알고리즘이다. 즉 **integer sotring** 알고리즘이다. 알고리즘은 고유한 key값을 가지는 객체의 수를 카운팅하고 출력 시퀀스에서 각 key값의 위치를 결정하기 위해 해당 카운트에 접두사(prefix)의 합을 적용하며 동작한다. 실행시간은 원소 수와 최소 key 값과 최대 key 값의 차이가 **선형적**이기 때문에 이 차이가 원소의 수보다 크게 크지 않은 경우에 사용하기 적합하다. 이 알고리즘은 더 큰 key를 효율적으로 다룰 수 있는 또 다른 정렬 알고리즘인 **기수정렬**(radix)에서 서브루틴으로 사용된다.
@@ -125,8 +114,9 @@
     <img src='/Algorithm/sorting/images/counting_2.jpg'>
 </div>
 
----
-### #6
-#### References
+
+----
+
+## References
 - [wikipedia](https://ko.wikipedia.org/)
 - [ratsgo blog](https://ratsgo.github.io/)
