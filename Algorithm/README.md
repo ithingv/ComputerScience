@@ -79,6 +79,47 @@
 
 ---
 ## Heap Sort
+- [파이썬구현](sorting/heap_sort.py)
+- **힙정렬**(heap sort)은 BUILD_MAX_HEAP으로 입력 배열 A, (n=length(A))를 **최대힙**(MAX HEAP)으로 먼저 만들면서 시작한다. 최대힙에서는 최대 값이 루트 A[0]에 저장되어 있으므로 이것을 A의 마지막 요소값과 교환하면 정확히 마지막 자리에 넣을 수 있다. 이제 힙에서 (A.heap_size를 줄여서) 노드 n을 제거하면 A[0, ..., (n-2)]을 최대 힙으로 만드는 것은 그리 어렵지 않다. 루트의 자식들은 최대 힙으로 남아 있지만 새로운 루트는 최대 힙 특성을 어길 수 있다. 따라서 최대 힙 특성을 다시 지키도록 **HEAPIFY**(A,0)을 호출한다. 이 알고리즘은 이 과정을 힙 크기가 n-1일 때부터 2로 줄어들 때까지 반복한다.  
+- **알고리즘**
+    ```
+    1. n개의 노드에 대한 완전 이진 트리를 구성한다. 이때 루트 노드부터 부모노드, 왼쪽 자식노드, 오른쪽 자식노드 순으로 구성한다.
+    2. 최대 힙을 구성한다. 최대 힙이란 부모노드가 자식노드보다 큰 트리를 말하는데, 단말 노드를 자식노드로 가진 부모노드부터 구성하며 아래부터 루트까지 올라오며 순차적으로 만들어 갈 수 있다.
+    3. 가장 큰 수(루트에 위치)를 가장 작은 수와 교환한다.
+    4. 2와 3을 반복한다.
+    ```
+- **복잡도**
+  
+  - **시간 복잡도**
+  이진 트리를 최대 힙으로 만들기 위하여 최대 힙으로 재구성 하는 과정이 **트리의 깊이** 만큼 이루어지므로 O(log n)의 수행시간이 걸린다. 구성된 최대 힙으로 힙 정렬을 수행하는데 걸리는 전체시간은 힙 구성시간과 n개의 데이터 삭제 및 재구성 시간을 포함한다.
+    힙정렬은 일반적인 경우 O(n log n)의 시간복잡도를 가진다.
+
+    = (log n + log (n-1) + ... + log 2)
+    = (log n + log (n-1) + ... + log 2) +(log n + log (n-1) + ... + log 2)
+    = (n log n)
+    
+    
+  <br>
+
+  ```
+  최악 시간복잡도	  O(n log n)
+  최선 시간복잡도	 O(n log n)
+  평균 시간복잡도	 O(n log n)
+  공간복잡도	 O(1)
+  ```
+- **시각화**
+  <img src='/Algorithm/sorting/images/heap-sort.gif'>
+  
+---
+<div align='center'>
+    <img src='/Algorithm/sorting/images/heap_1.jpg'>
+    <img src='/Algorithm/sorting/images/heap_2.jpg'>
+    <img src='/Algorithm/sorting/images/heap_3.jpg'>
+    <img src='/Algorithm/sorting/images/heap_4.jpg'>
+    <img src='/Algorithm/sorting/images/heap_5.jpg'>
+</div>
+ 
+
 
 ---
 ## Counting Sort
