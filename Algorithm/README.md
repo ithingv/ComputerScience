@@ -109,7 +109,8 @@
   ```
 
 - **시각화**
-  <img src='/Algorithm/sorting/images/heap-sort.gif'>
+
+<img src='/Algorithm/sorting/images/heap-sort.gif'>
   
 ---
 <div align='center'>
