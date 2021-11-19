@@ -9,7 +9,8 @@
 - [Merge Sort](#merge-sort)
 - [Heap Sort](#heap-sort)
 - [Counting Sort](#counting-sort)
-- [References](#references)
+- [Topological Sort](#topological-sort)
+- [Reference](#reference)
 
 
 
@@ -157,9 +158,53 @@
     <img src='/Algorithm/sorting/images/counting_2.jpg'>
 </div>
 
+---
+## Topological Sort
+- [파이썬구현](./sorting/topological_sort.py)
+- **위상 정렬**이란 어떤 일을 하는 순서를 찾는 알고리즘이다. **DAG**(Directed Acyclic Graph)라는 비순환 방향그래프에서 각 정점들의 선후 관계가 주어졌을 때, 이 순서를 위배하지 않으면서 방문할 수 있는 정점의 순서를 정렬하는 알고리즘으로 그래프의 유형에 따라 여러가지 정렬 방법이 나올 수 있다는 특징을 가진다.
+- **특징**
+  - 비순환 방향 그래프는 사이클이 존재하지 않는 방향 그래프이다.
+  - 정렬의 결과로 여러가지의 위상 정렬이 존재할 수 있다.
+  - 위상 정렬의 과정에서 그래프에 남아 있는 정점 중에 진입차수(in degree)가 0인 정점이 없다면 위상 정렬은 중단되고 모든 노드를 방문하지 않은 경우, 이러한 그래프는 위상 정렬로 표현이 불가능하다. 
+- **알고리즘**
+  
+  - Pseudo Code
+    ```C
+    TopologicalSort(Graph G)
+    {
+      while(vertices of g are remain){
+        v = Select vertex in-degree == 0;
+        Visit(v);
+        remove v;
+        decrease in-degree of adjacent of v;
+      }
+    }
+    ```
+- **복잡도**
+    - 위상 정렬의 일반적인 알고리즘은 꼭짓점의 양수 노드의 선형 실행 시간을 가진다. 
+    -  O(|V|+|E|), V: 정점, E: 간선
+    
+- **응용**
+  - **Apache Airflow** 는 데이터 엔지니어링 파이프라인을 위한 오픈 소스 워크플로 관리 플랫폼이다. 복잡한 회사의 워크플로를 관리하기 위한 솔루션으로 Airflow를 생성함으로써 Python 프로그래밍으로 워크플로를 작성 및 예약하고 내장된 Airflow 사용자 인터페이스 를 통해 워크플로를 모니터링할 수 있다.
+  - [Apache Airflow DAGs](https://airflow.apache.org/docs/apache-airflow/stable/concepts/dags.html#the-dag-decorator)
+
+- **시각화**
+
+  <img src='/Algorithm/sorting/images/topo-sort.gif' height="300px">
+  
+---
+<div align='center'>
+    <img src='/Algorithm/sorting/images/topo_1.jpg'>
+    <img src='/Algorithm/sorting/images/topo_2.jpg'>
+    <img src='/Algorithm/sorting/images/topo_3.jpg'>
+    <img src='/Algorithm/sorting/images/topo_4.jpg'>
+    <img src='/Algorithm/sorting/images/topo_5.jpg'>
+    <img src='/Algorithm/sorting/images/topo_6.jpg'>
+</div>
 
 ----
 
-## References
+## Reference
 - [wikipedia](https://ko.wikipedia.org/)
 - [ratsgo blog](https://ratsgo.github.io/)
+- [안경잡이 개발자](https://m.blog.naver.com/PostList.naver?blogId=ndb796)
