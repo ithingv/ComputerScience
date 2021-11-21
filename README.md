@@ -1,18 +1,9 @@
-# ComputerScience
----
-
-## ✔ Algorithm
-
-
-
 <div align='center'>
   <h1>Sorting</h1>
 </div>
 
 
 **Sort Algorithm**
-- [# ComputerScience](#-computerscience)
-- [✔ Algorithm](#-algorithm)
 - [Quicksort](#quicksort)
 - [Merge Sort](#merge-sort)
 - [Heap Sort](#heap-sort)
