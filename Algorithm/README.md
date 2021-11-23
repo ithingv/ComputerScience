@@ -1,10 +1,13 @@
 
 <div align='center'>
-  <h1>Sorting</h1>
+  <h1>Algorithm</h1>
 </div>
 
+**Graph Algorithm**
+- [Depth First Search]()
 
 **Sort Algorithm**
+- [Depth First Search](#depth-first-search)
 - [Quicksort](#quicksort)
 - [Merge Sort](#merge-sort)
 - [Heap Sort](#heap-sort)
@@ -13,6 +16,34 @@
 - [Topological Sort](#topological-sort)
 - [Reference](#reference)
 
+------
+
+## Depth First Search
+- [파이썬 구현](./graph/dfs.py)  
+- **그래프 순회**란 그래프 탐색이라고도 불리며 그래프의 각 정점을 방문하는 과정을 말한다.
+- 각 정점을 방문하는 그래프 순회에는 크게 **깊이 우선 탐색**과 **너비 우선 탐색**의 2가지 알고리즘이 있다. DFS는 주로 스택으로 구현하거나 재귀로 구현하며, **백트래킹**을 통해 뛰어난 효용을 보인다. 
+- **깊이 우선 탐색**은 맹목적 탐색방법의 하나로 트리나 그래프에서 한 루트로 탐색하다가 특정 상황에서 최대한 깊숙히 들어가서 확인한 뒤 다시 돌아가 다른 루트로 탐색하는 방식이다.
+- **단순 검색 속도** 자체는 BFS에 비해서 느리다. 하지만 검색이 아닌 순회(traversal)를 할 경우는 많이 쓰인다. DFS는 특히 리프 노드에만 데이터를 저장하는 정렬 트리 구조에서 항상 순서대로 데이터를 방문한다는 장점이 있다. 백트래킹에 사용되는 이유도 공통 상위를 가지는 아래 리프 노드들을 한방에 잘라내 버리는게 가능하기 때문이다.
+- **알고리즘**
+    - **재귀를 이용한 DFS 구현 PseudoCode**
+    ```
+    DFS(G, v)
+      label v as discovered
+      for all directed edges from v to w that are in G.adjacentEdges(v) do
+        if vertex w is not labeled as discovered then
+          recursively call DFS(G, w)
+    ```
+
+- **시각화**
+<img src='./graph/images/dfs.gif' width="300px">
+<div align='center'>
+    <img src='./graph/images/dfs_1.jpg'>
+    <img src='./graph/images/dfs_2.jpg'>
+    <img src='./graph/images/dfs_3.jpg'>
+    <img src='./graph/images/dfs_4.jpg'>
+    <img src='./graph/images/dfs_5.jpg'>
+</div>
+<br>
 
 
 ---
@@ -38,11 +69,11 @@
     평균 시간복잡도: O(n log n)
     ```
 - **시각화**
-<img src='/Algorithm/sorting/images/quick-sort.gif'>
+<img src='./sorting/images/quick-sort.gif'>
 <div align='center'>
-    <img src='/Algorithm/sorting/images/quick_1.jpg'>
-    <img src='/Algorithm/sorting/images/quick_2.jpg'>
-    <img src='/Algorithm/sorting/images/quick_3.jpg'>
+    <img src='./sorting/images/quick_1.jpg'>
+    <img src='./sorting/images/quick_2.jpg'>
+    <img src='./sorting/images/quick_3.jpg'>
 </div>
 <br>
 
@@ -68,14 +99,14 @@
    ```
 - **시각화** 
 <br>
-<img src='/Algorithm/sorting/images/merge-sort.gif'>
+<img src='./sorting/images/merge-sort.gif'>
 <div align='center'>
-    <img src='/Algorithm/sorting/images/merge_1.jpg'>
-    <img src='/Algorithm/sorting/images/merge_2.jpg'>
-    <img src='/Algorithm/sorting/images/merge_3.jpg'>
-    <img src='/Algorithm/sorting/images/merge_4.jpg'>
-    <img src='/Algorithm/sorting/images/merge_5.jpg'>
-    <img src='/Algorithm/sorting/images/merge_6.jpg'>
+    <img src='./sorting/images/merge_1.jpg'>
+    <img src='./sorting/images/merge_2.jpg'>
+    <img src='./sorting/images/merge_3.jpg'>
+    <img src='./sorting/images/merge_4.jpg'>
+    <img src='./sorting/images/merge_5.jpg'>
+    <img src='./sorting/images/merge_6.jpg'>
 </div>
 <br>
 
@@ -112,15 +143,15 @@
 
 - **시각화**
 
-<img src='/Algorithm/sorting/images/heap-sort.gif'>
+<img src='./sorting/images/heap-sort.gif'>
   
 ---
 <div align='center'>
-    <img src='/Algorithm/sorting/images/heap_1.jpg'>
-    <img src='/Algorithm/sorting/images/heap_2.jpg'>
-    <img src='/Algorithm/sorting/images/heap_3.jpg'>
-    <img src='/Algorithm/sorting/images/heap_4.jpg'>
-    <img src='/Algorithm/sorting/images/heap_5.jpg'>
+    <img src='./sorting/images/heap_1.jpg'>
+    <img src='./sorting/images/heap_2.jpg'>
+    <img src='./sorting/images/heap_3.jpg'>
+    <img src='./sorting/images/heap_4.jpg'>
+    <img src='./sorting/images/heap_5.jpg'>
 </div>
  
 
@@ -155,8 +186,8 @@
   
 ---
 <div align='center'>
-    <img src='/Algorithm/sorting/images/counting_1.jpg'>
-    <img src='/Algorithm/sorting/images/counting_2.jpg'>
+    <img src='./sorting/images/counting_1.jpg'>
+    <img src='./sorting/images/counting_2.jpg'>
 </div>
 
 ## Radix Sort
@@ -184,12 +215,12 @@
 - **시각화**
 
   <br>  
-  <img src='/Algorithm/sorting/images/radix-sort.gif' width="300px">  
+  <img src='./sorting/images/radix-sort.gif' width="300px">  
 
 ---
 <div align='center'>
-    <img src='/Algorithm/sorting/images/radix_1.jpg'>
-    <img src='/Algorithm/sorting/images/radix_2.jpg'>
+    <img src='./sorting/images/radix_1.jpg'>
+    <img src='./sorting/images/radix_2.jpg'>
 </div>
 
 
@@ -226,16 +257,16 @@
 
 - **시각화**
 
-  <img src='/Algorithm/sorting/images/topo-sort.gif' height="300px">
+  <img src='./sorting/images/topo-sort.gif' height="300px">
   
 ---
 <div align='center'>
-    <img src='/Algorithm/sorting/images/topo_1.jpg'>
-    <img src='/Algorithm/sorting/images/topo_2.jpg'>
-    <img src='/Algorithm/sorting/images/topo_3.jpg'>
-    <img src='/Algorithm/sorting/images/topo_4.jpg'>
-    <img src='/Algorithm/sorting/images/topo_5.jpg'>
-    <img src='/Algorithm/sorting/images/topo_6.jpg'>
+    <img src='./sorting/images/topo_1.jpg'>
+    <img src='./sorting/images/topo_2.jpg'>
+    <img src='./sorting/images/topo_3.jpg'>
+    <img src='./sorting/images/topo_4.jpg'>
+    <img src='./sorting/images/topo_5.jpg'>
+    <img src='./sorting/images/topo_6.jpg'>
 </div>
 
 ----
