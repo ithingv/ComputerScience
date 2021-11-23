@@ -4,10 +4,9 @@
 </div>
 
 **Graph Algorithm**
-- [Depth First Search]()
+- [Depth First Search](#depth-first-search)
 
 **Sort Algorithm**
-- [Depth First Search](#depth-first-search)
 - [Quicksort](#quicksort)
 - [Merge Sort](#merge-sort)
 - [Heap Sort](#heap-sort)
