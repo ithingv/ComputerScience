@@ -44,7 +44,6 @@
 </div>
 <br>
 
-
 ---
 ## Quicksort
 - [파이썬구현](./sorting/quick_sort.py)
