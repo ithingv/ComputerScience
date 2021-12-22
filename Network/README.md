@@ -14,7 +14,7 @@
 - 네트워크 크기에 따라 32비트의 IP 주소를 네트워크 ID와 호스트 ID로 bit를 조정하여 IP 주소를 A ~ E클래스로 구분할 수 있다.
 
 <div align="center">
-    <img style="width: 800px; height: 500px;" src='./images/ip_1.jpg'>
+    <img style="margin: 50px 0;width: 800px; height: 500px;" src='./images/ip_1.jpg'>
 </div>
 
 
