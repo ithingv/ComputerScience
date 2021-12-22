@@ -7,7 +7,6 @@
 - [Depth First Search](#depth-first-search)
 
 **Sort Algorithm**
-- [Depth First Search](#depth-first-search)
 - [Quicksort](#quicksort)
 - [Merge Sort](#merge-sort)
 - [Heap Sort](#heap-sort)
@@ -44,7 +43,6 @@
     <img src='./graph/images/dfs_5.jpg'>
 </div>
 <br>
-
 
 ---
 ## Quicksort
