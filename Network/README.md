@@ -4,7 +4,6 @@
 
 
 **Contents**
-- [- Subnet](#--subnet)
 - [IP Address](#ip-address)
 - [Network/Broadcast Address](#networkbroadcast-address)
 - [Subnet](#subnet)
