@@ -4,7 +4,7 @@
 </div>
 
 **Graph Algorithm**
-- [Depth First Search]()
+- [Depth First Search](#depth-first-search)
 
 **Sort Algorithm**
 - [Depth First Search](#depth-first-search)
