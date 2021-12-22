@@ -13,7 +13,7 @@
 - IP 주소는 네트워크의 규모에 따라 A ~ E 클래스로 나누어져 있으며 일반적으로 A ~ C클래스를 사용한다.
 - 네트워크 크기에 따라 32비트의 IP 주소를 네트워크 ID와 호스트 ID로 bit를 조정하여 IP 주소를 A ~ E클래스로 구분할 수 있다.
 
-<div style="margin: 100px 0; text-align:center">
+<div style="margin: 100px 0; text-align:center; width: 800px; height: 500px;">
     <img src='./images/ip_1.jpg'>
 </div>
 
@@ -26,7 +26,7 @@
 
 - C 클래스의 1옥텟의 범위는 2진수로 11000000 ~ 11011111이며, 10진수로 변환하면 192~223이다. 192.0.0.0 ~ 223.255.255.255의 범위를 가진다.
 
-<div style="margin: 50px 0; text-align:center">
+<div style="margin: 50px 0; text-align:center; width: 800px; height: 500px;">
 <img src='./images/ip_2.jpg'>
 </div>
 
@@ -39,15 +39,16 @@
 
 
 - 네트워크와 브로드캐스트 주소로 컴퓨터나 라우터가 자신의 IP로 사용하면 안된다.
-<div style="margin: 50px 0; text-align:center">
+<div style="margin: 50px 0; text-align:center; width: 800px; height: 500px;">
     <img src='./images/ip_3.jpg'>
 </div>
+
 - 네트워크 주소는 호스트 ID가 10진수로 0, 2진수 00000000인 주소이다. 
 
 - 네트워크 주소는 전체 네트워크에서 작은 네트워크를 식별하는데 사용되고 호스트 ID가 10진수로 0이면 그 네트워크 전체를 대표하는 주소가 된다. 
 
 - 예를들어 192.168.1.0은 네트워크 192.168.1.1 ~ 6의 IP 주소를 대표하는 네트워크 주소이다. 
-<div style="margin: 50px 0; text-align:center">
+<div style="margin: 50px 0; text-align:center; width: 800px; height: 500px;">
 <img src='./images/ip_4.jpg'>
 </div>
 
@@ -67,7 +68,7 @@
 
 - 네트워크를 분할하는 것을 서브넷팅이라 하고, 분할된 네트워크를 서브넷이라고 한다.
 
-<div style="margin: 50px 0; text-align:center">
+<div style="margin: 50px 0; text-align:center; width: 800px; height: 500px;">
 <img src='./images/ip_5.png'>
 </div>
 
