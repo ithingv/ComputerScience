@@ -13,8 +13,8 @@
 - IP 주소는 네트워크의 규모에 따라 A ~ E 클래스로 나누어져 있으며 일반적으로 A ~ C클래스를 사용한다.
 - 네트워크 크기에 따라 32비트의 IP 주소를 네트워크 ID와 호스트 ID로 bit를 조정하여 IP 주소를 A ~ E클래스로 구분할 수 있다.
 
-<div style="margin: 100px 0; text-align:center">
-    <img style="width: 800px; height: 500px;"src='./images/ip_1.jpg'>
+<div align="center">
+    <img style="width: 800px; height: 500px;" src='./images/ip_1.jpg'>
 </div>
 
 
