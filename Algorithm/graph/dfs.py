@@ -1,27 +1,39 @@
 from collections import deque
-import sys
- 
+
 def dfs(v1):
-    visit[v1] = True
-    print(v1, end = ' ')
-    for v2 in edge[v1]:
-        if visit[v2] == False:
+
+    visited[v1] = True
+    print(f"{v1} ", end="")
+
+    for v2 in edge_list[v1]:
+        if not visited[v2]:
             dfs(v2)
- 
+
+
+# def dfs(v1):
+#     if visited[v1]:
+#         return
+
+#     visited[v1] = True
+#     print(f"{v1} ", end="")
+    
+#     for v2 in edge_list[v1]:
+#         dfs(v2)
+
 if __name__ == "__main__":
 
-    n, m, start = map(int, sys.stdin.readline().strip().split())
-    
-    edge = [[] for _ in range(n + 1)]
- 
-    for _ in range(m):
-        v1, v2 = map(int, sys.stdin.readline().strip().split())
-        edge[v1].append(v2)
-        edge[v2].append(v1)
- 
-    for e in edge:
-        e.sort()
- 
-    visit = [False for _ in range(n + 1)]
+    n = int(input())
 
-    dfs(start)
+    edge_list = [[] for _ in range(n + 1)]
+
+    for i in range(n):
+        e1, e2 = list(map(int, input().split()))
+        edge_list[e1].append(e2)
+        edge_list[e2].append(e1)
+
+    visited = [False for _ in range(n + 1)]
+    
+    # 1번 정점부터 순회
+    dfs(1)
+
+    print(visited)
